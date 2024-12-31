@@ -3,8 +3,9 @@ from sklearn.model_selection import train_test_split
 import os
 
 class DataLoader:
-    def __init__(self, data_path):
+    def __init__(self, data_path, sample_size=None):
         self.data_path = data_path
+        self.sample_size = sample_size
         
     def load_data(self):
         """Load the URL dataset"""
@@ -22,6 +23,17 @@ class DataLoader:
             # Try to read the CSV
             df = pd.read_csv(self.data_path)
             
+            # Remove rows with NaN values
+            initial_size = len(df)
+            df = df.dropna()
+            if len(df) < initial_size:
+                print(f"\nRemoved {initial_size - len(df)} rows with missing values")
+            
+            # Sample data if sample_size is specified
+            if self.sample_size and self.sample_size < len(df):
+                df = df.sample(n=self.sample_size, random_state=42)
+                print(f"\nUsing sample of {self.sample_size} URLs for faster testing")
+            
             # Print unique values in 'type' column to debug
             if 'type' in df.columns:
                 print("\nUnique values in 'type' column:", df['type'].unique())
@@ -34,6 +46,8 @@ class DataLoader:
                     'malware': 1
                 }
                 df['label'] = df['type'].map(type_mapping)
+                # Remove rows where mapping failed (if any)
+                df = df.dropna(subset=['label'])
                 df = df.drop('type', axis=1)
                 
             # Basic validation of the dataset
@@ -60,8 +74,19 @@ class DataLoader:
     def split_data(self, df, test_size=0.2, random_state=42):
         """Split data into train and test sets"""
         if isinstance(df, pd.DataFrame):
-            X = df
-            y = df.pop('label') if 'label' in df.columns else None
+            # Ensure we don't have any NaN values
+            df = df.dropna()
+            
+            # Ensure balanced test set
+            test_size = min(test_size, 0.3)  # Maksimalno 30% za test
+            
+            X = df.drop('label', axis=1)
+            y = df['label'].astype(int)
+            
+            # Stratified split za održavanje omjera klasa
+            return train_test_split(X, y, test_size=test_size, 
+                                  random_state=random_state, 
+                                  stratify=y)
         else:
             X = df
             y = None
