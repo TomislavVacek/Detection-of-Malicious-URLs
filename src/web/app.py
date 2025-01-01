@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 import sys
 import os
-import numpy as np  # Dodajemo numpy import
+import numpy as np
+from urllib.parse import urlparse  # Dodajemo ovaj import
 
 # Add project root to Python path
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -38,9 +39,45 @@ def predict():
         url = request.form['url']
         print(f"Processing URL: {url}")
         
+        # Whitelist za poznate sigurne domene
+        known_safe_domains = {
+            'google.com', 'microsoft.com', 'github.com', 'wikipedia.org',
+            'python.org', 'apple.com', 'amazon.com', 'facebook.com'
+        }
+        
+        parsed_url = urlparse(url)
+        domain = parsed_url.netloc.lower()
+        base_domain = '.'.join(domain.split('.')[-2:])  # uzima zadnja dva dijela domene
+        
+        if (base_domain in known_safe_domains):
+            return render_template('result.html', result={
+                'url': url,
+                'is_malicious': False,
+                'confidence': 0.95,
+                'features': {},
+                'warning': 'Known safe domain'
+            })
+        
         # Extract features
         features = extractor.extract_features(url)
         feature_list = list(features.values())
+        
+        # Dodajemo strože provjere
+        immediate_flags = (
+            features.get('is_shortened_url', False),
+            features.get('has_typosquatting', False),
+            features.get('has_number_letter_substitution', False),
+            len(url) > 100,  # Vrlo dugi URL-ovi
+            features.get('suspicious_word_count', 0) > 2
+        )
+        
+        if any(immediate_flags):
+            return render_template('result.html', result={
+                'url': url,
+                'is_malicious': True,
+                'confidence': 0.95,
+                'warning': 'Suspicious patterns detected'
+            })
         
         # Dodajemo dodatnu provjeru za očite znakove malicioznosti
         obvious_malicious = (

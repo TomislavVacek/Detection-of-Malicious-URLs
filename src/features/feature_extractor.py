@@ -29,6 +29,19 @@ class FeatureExtractor:
             '.exe', '.dll', '.bat', '.sh', '.php', '.jsp',
             '.cgi', '.scr', '.vbs', '.js', '.jar'
         }
+        
+        # Dodajemo nove suspicious patterns
+        self.suspicious_patterns = {
+            'bit.ly',          # URL shorteners
+            'tinyurl.com',
+            'goo.gl',
+            't.co',
+            'micr0s0ft',      # Typosquatting
+            'micosoft',
+            'mircosoft',
+            'microsft',
+            '0' # Zero instead of 'o'
+        }
 
     def extract_features(self, url):
         """Extract features from a single URL"""
@@ -67,7 +80,8 @@ class FeatureExtractor:
             'suspicious_word_count', 'has_suspicious_words',
             'suspicious_domain', 'domain_length_suspicious', 'multiple_subdomains',
             'path_has_suspicious_word', 'query_has_suspicious_word',
-            'has_suspicious_chars', 'has_multiple_slashes', 'has_multiple_dots'
+            'has_suspicious_chars', 'has_multiple_slashes', 'has_multiple_dots',
+            'is_shortened_url', 'has_typosquatting', 'has_number_letter_substitution'
         ]
     
     def _get_basic_features(self, url):
@@ -79,7 +93,7 @@ class FeatureExtractor:
         }
     
     def _get_domain_features(self, parsed_url):
-        domain = parsed_url.netloc
+        domain = parsed_url.netloc.lower()
         parts = domain.split('.')
         
         features = {
@@ -95,6 +109,13 @@ class FeatureExtractor:
             'domain_length_suspicious': len(domain) > 30,
             'multiple_subdomains': domain.count('.') > 2
         }
+        
+        # Dodajemo nove provjere
+        features.update({
+            'is_shortened_url': any(shortener in domain for shortener in ['bit.ly', 'tinyurl.com', 'goo.gl', 't.co']),
+            'has_typosquatting': self._check_typosquatting(domain),
+            'has_number_letter_substitution': self._check_number_substitution(domain)
+        })
         
         return features
         
@@ -159,3 +180,22 @@ class FeatureExtractor:
     def _get_default_features(self):
         """Return default feature values when URL processing fails"""
         return {name: 0 for name in self._get_feature_names()}
+    
+    def _check_typosquatting(self, domain):
+        """Check for common typosquatting patterns"""
+        known_brands = ['microsoft', 'google', 'facebook', 'apple', 'amazon', 'paypal']
+        # Dodana stroža provjera - mora sadržavati barem 70% znakova branda
+        for brand in known_brands:
+            if brand in domain and domain != brand:
+                similarity = sum(c in domain for c in brand) / len(brand)
+                if similarity > 0.7:
+                    return True
+        return False
+    
+    def _check_number_substitution(self, domain):
+        """Check for number substitutions (0 for o, 1 for l, etc)"""
+        substitutions = {'0': 'o', '1': 'l', '3': 'e', '4': 'a', '5': 's'}
+        # Provjeravamo samo ako domena nije potpuno brojčana
+        if not domain.isdigit():
+            return any(num in domain for num in substitutions.keys())
+        return False
