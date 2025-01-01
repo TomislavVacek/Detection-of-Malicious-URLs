@@ -14,12 +14,21 @@ class FeatureExtractor:
             'login', 'bank', 'account', 'verify', 'secure', 'update',
             'payment', 'password', 'credential', 'confirm',
             'redirect', 'admin', 'backup', 'include', 'tmp', 'cgi-bin',
-            'download', 'signin', 'signup', 'paypal', 'free', 'lucky'
+            'download', 'signin', 'signup', 'paypal', 'free', 'lucky',
+            'security', 'recover', 'unlock', 'authorize', 'root',
+            'administrator', 'auth', 'validate', 'validation',
+            'profile', 'manage', 'management', 'access', 'private',
+            'dashboard', 'webscr', 'cmd', 'personal', 'update',
+            'user', 'users', 'billing', 'subscribe', 'wallet'
         }
         
         self.vowels = set('aeiou')
         self.consonants = set('bcdfghjklmnpqrstvwxyz')
         self.tld_list = {'com', 'org', 'net', 'edu', 'gov', 'mil', 'info', 'biz'}
+        self.suspicious_extensions = {
+            '.exe', '.dll', '.bat', '.sh', '.php', '.jsp',
+            '.cgi', '.scr', '.vbs', '.js', '.jar'
+        }
 
     def extract_features(self, url):
         """Extract features from a single URL"""
@@ -55,7 +64,10 @@ class FeatureExtractor:
             'query_length', 'fragment_length', 'path_token_count',
             'query_param_count', 'path_extension', 'vowel_ratio',
             'consonant_ratio', 'uppercase_ratio', 'url_entropy',
-            'suspicious_word_count', 'has_suspicious_words'
+            'suspicious_word_count', 'has_suspicious_words',
+            'suspicious_domain', 'domain_length_suspicious', 'multiple_subdomains',
+            'path_has_suspicious_word', 'query_has_suspicious_word',
+            'has_suspicious_chars', 'has_multiple_slashes', 'has_multiple_dots'
         ]
     
     def _get_basic_features(self, url):
@@ -78,13 +90,16 @@ class FeatureExtractor:
             'has_valid_tld': parts[-1].lower() in self.tld_list if parts else False,
             'domain_hyphen_count': domain.count('-'),
             'domain_token_count': len(parts),
-            'longest_domain_token': max(len(token) for token in parts) if parts else 0
+            'longest_domain_token': max(len(token) for token in parts) if parts else 0,
+            'suspicious_domain': any(word in domain.lower() for word in self.suspicious_words),
+            'domain_length_suspicious': len(domain) > 30,
+            'multiple_subdomains': domain.count('.') > 2
         }
         
         return features
         
     def _get_path_features(self, parsed_url):
-        path = parsed_url.path
+        path = parsed_url.path.lower()
         query = parsed_url.query
         fragment = parsed_url.fragment
         
@@ -96,14 +111,18 @@ class FeatureExtractor:
             'fragment_length': len(fragment),
             'path_token_count': len([x for x in path.split('/') if x]),
             'query_param_count': len(query.split('&')) if query else 0,
-            'path_extension': self._has_suspicious_extension(path)
+            'path_extension': self._has_suspicious_extension(path),
+            'path_has_suspicious_word': any(word in path for word in self.suspicious_words),
+            'query_has_suspicious_word': any(word in query for word in self.suspicious_words),
+            'has_suspicious_chars': any(c in path for c in ['%', '\\', '..', '//']),
+            'has_multiple_slashes': '//' in path,
+            'has_multiple_dots': '..' in path
         }
         
         return features
     
     def _has_suspicious_extension(self, path):
-        suspicious_extensions = {'.exe', '.dll', '.bat', '.sh', '.php', '.jsp'}
-        return any(path.lower().endswith(ext) for ext in suspicious_extensions)
+        return any(path.lower().endswith(ext) for ext in self.suspicious_extensions)
 
     def _get_char_distribution(self, url):
         return {

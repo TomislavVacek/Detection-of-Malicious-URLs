@@ -18,11 +18,11 @@ class ModelTrainer:
             'random_forest': {
                 'model': RandomForestClassifier(random_state=42),
                 'params': {
-                    'n_estimators': [500],  # Smanjili smo opcije jer znamo da 500 radi dobro
-                    'max_depth': [15, 20, 25],
-                    'min_samples_split': [2, 5],
-                    'min_samples_leaf': [1, 2],
-                    'class_weight': ['balanced']
+                    'n_estimators': [1000],  # Povećano sa 500
+                    'max_depth': [30],       # Povećano sa 20
+                    'min_samples_split': [2],
+                    'min_samples_leaf': [1],
+                    'class_weight': [{0: 1, 1: 2}]  # Daje veću težinu malicioznim URL-ovima
                 }
             },
             'logistic_regression': {

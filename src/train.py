@@ -63,8 +63,8 @@ def main():
     project_root = os.path.dirname(current_dir)
     data_path = os.path.join(project_root, 'data', 'raw', 'malicious_urls.csv')
     
-    # Load data with smaller sample for testing
-    sample_size = 50000  # Povećavamo uzorak za bolje rezultate
+    # Povećajte veličinu uzorka na 100,000
+    sample_size = 100000  # Bilo je 50000
     loader = DataLoader(data_path, sample_size=sample_size)
     data = loader.load_data()
     
