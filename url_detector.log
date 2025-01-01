@@ -1,0 +1,64 @@
+2025-01-01 17:34:33,870 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-01 17:34:33,870 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-01 17:34:33,873 - INFO -  * Restarting with stat
+2025-01-01 17:34:36,645 - WARNING -  * Debugger is active!
+2025-01-01 17:34:36,649 - INFO -  * Debugger PIN: 136-414-756
+2025-01-01 17:38:34,212 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-01 17:38:34,213 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-01 17:38:34,214 - INFO -  * Restarting with stat
+2025-01-01 17:38:36,711 - WARNING -  * Debugger is active!
+2025-01-01 17:38:36,715 - INFO -  * Debugger PIN: 136-414-756
+2025-01-01 17:39:43,612 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-01 17:39:43,612 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-01 17:39:43,613 - INFO -  * Restarting with stat
+2025-01-01 17:39:46,160 - WARNING -  * Debugger is active!
+2025-01-01 17:39:46,165 - INFO -  * Debugger PIN: 136-414-756
+2025-01-01 17:39:59,744 - INFO - 127.0.0.1 - - [01/Jan/2025 17:39:59] "GET / HTTP/1.1" 200 -
+2025-01-01 17:39:59,878 - INFO - 127.0.0.1 - - [01/Jan/2025 17:39:59] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-01 17:39:59,905 - INFO - 127.0.0.1 - - [01/Jan/2025 17:39:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:40:00,271 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-01 17:40:03,938 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-01 17:40:03,990 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:03] "POST /predict HTTP/1.1" 200 -
+2025-01-01 17:40:04,239 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:40:08,495 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:08] "GET / HTTP/1.1" 200 -
+2025-01-01 17:40:08,588 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:40:08,759 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:08] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-01 17:40:10,746 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-01 17:40:10,904 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:10] "POST /predict HTTP/1.1" 200 -
+2025-01-01 17:40:11,061 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:40:13,354 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:13] "GET / HTTP/1.1" 200 -
+2025-01-01 17:40:13,462 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:40:13,615 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:13] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-01 17:40:16,069 - INFO - Request from 127.0.0.1 - URL: https://www.github.com
+2025-01-01 17:40:16,070 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:16] "POST /predict HTTP/1.1" 200 -
+2025-01-01 17:40:16,381 - INFO - 127.0.0.1 - - [01/Jan/2025 17:40:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:23,723 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-01 17:41:23,724 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-01 17:41:23,725 - INFO -  * Restarting with stat
+2025-01-01 17:41:26,269 - WARNING -  * Debugger is active!
+2025-01-01 17:41:26,272 - INFO -  * Debugger PIN: 136-414-756
+2025-01-01 17:41:38,152 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:38] "GET / HTTP/1.1" 200 -
+2025-01-01 17:41:38,303 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:38,379 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:38] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-01 17:41:38,484 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-01 17:41:40,243 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-01 17:41:40,432 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:40] "POST /predict HTTP/1.1" 200 -
+2025-01-01 17:41:40,551 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:44,049 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:44] "GET / HTTP/1.1" 200 -
+2025-01-01 17:41:44,143 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:44,301 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:44] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-01 17:41:46,589 - INFO - Request from 127.0.0.1 - URL: https://www.github.com
+2025-01-01 17:41:46,590 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:46] "POST /predict HTTP/1.1" 200 -
+2025-01-01 17:41:46,906 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:48,958 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:48] "GET / HTTP/1.1" 200 -
+2025-01-01 17:41:49,066 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:49,205 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:49] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-01 17:41:50,678 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-01 17:41:50,814 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:50] "POST /predict HTTP/1.1" 200 -
+2025-01-01 17:41:50,980 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-01 17:41:54,890 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-01 17:41:54,891 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:54] "[31m[1mGET / HTTP/1.1[0m" 429 -
