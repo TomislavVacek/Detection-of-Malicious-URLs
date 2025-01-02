@@ -184,6 +184,10 @@ class FeatureExtractor:
     def _check_typosquatting(self, domain):
         """Check for common typosquatting patterns"""
         known_brands = ['microsoft', 'google', 'facebook', 'apple', 'amazon', 'paypal']
+        # Dodajemo provjeru za točnu domenu
+        if domain in ['www.google.com', 'google.com']:
+            return False
+        
         # Dodana stroža provjera - mora sadržavati barem 70% znakova branda
         for brand in known_brands:
             if brand in domain and domain != brand:

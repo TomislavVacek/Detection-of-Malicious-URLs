@@ -62,3 +62,191 @@
 2025-01-01 17:41:50,980 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-01-01 17:41:54,890 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
 2025-01-01 17:41:54,891 - INFO - 127.0.0.1 - - [01/Jan/2025 17:41:54] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 02:10:36,323 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 02:14:14,268 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 02:18:07,073 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 02:18:07,073 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 02:18:07,075 - INFO -  * Restarting with stat
+2025-01-02 02:18:09,602 - WARNING -  * Debugger is active!
+2025-01-02 02:18:09,613 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 02:18:13,761 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:13] "GET / HTTP/1.1" 200 -
+2025-01-02 02:18:13,905 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 02:18:13,979 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:13] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 02:18:14,406 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 02:18:17,717 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 02:18:17,726 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:17] "POST /predict HTTP/1.1" 200 -
+2025-01-02 02:18:18,027 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 02:18:20,630 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:20] "GET / HTTP/1.1" 200 -
+2025-01-02 02:18:20,731 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 02:18:20,886 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:20] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 02:18:24,270 - INFO - Request from 127.0.0.1 - URL: https://www.github.com
+2025-01-02 02:18:24,272 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:24] "POST /predict HTTP/1.1" 200 -
+2025-01-02 02:18:24,574 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 02:18:26,002 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:26] "GET / HTTP/1.1" 200 -
+2025-01-02 02:18:26,093 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 02:18:26,262 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:26] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 02:18:42,139 - INFO - Request from 127.0.0.1 - URL: http://bit.ly/suspicious
+2025-01-02 02:18:42,155 - ERROR - Error processing URL http://bit.ly/suspicious: Object of type Undefined is not JSON serializable
+2025-01-02 02:18:42,156 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:42] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-01-02 02:18:51,525 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: predict
+2025-01-02 02:18:51,526 - INFO - 127.0.0.1 - - [02/Jan/2025 02:18:51] "[31m[1mPOST /predict HTTP/1.1[0m" 429 -
+2025-01-02 02:19:05,317 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: predict
+2025-01-02 02:19:05,318 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:05] "[31m[1mPOST /predict HTTP/1.1[0m" 429 -
+2025-01-02 02:19:18,093 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 02:19:18,093 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 02:19:18,094 - INFO -  * Restarting with stat
+2025-01-02 02:19:20,555 - WARNING -  * Debugger is active!
+2025-01-02 02:19:20,558 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 02:19:22,592 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:22] "GET / HTTP/1.1" 200 -
+2025-01-02 02:19:22,741 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 02:19:22,861 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:22] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 02:19:22,926 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 02:19:31,612 - INFO - Request from 127.0.0.1 - URL: http://bit.ly/suspicious
+2025-01-02 02:19:31,621 - ERROR - Error processing URL http://bit.ly/suspicious: Object of type Undefined is not JSON serializable
+2025-01-02 02:19:31,622 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:31] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-01-02 02:19:44,140 - INFO - Request from 127.0.0.1 - URL: http://g00gle.com/admin
+2025-01-02 02:19:44,141 - ERROR - Error processing URL http://g00gle.com/admin: Object of type Undefined is not JSON serializable
+2025-01-02 02:19:44,141 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:44] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-01-02 02:19:51,625 - INFO - Request from 127.0.0.1 - URL: http://g00gle.com/admin
+2025-01-02 02:19:51,626 - ERROR - Error processing URL http://g00gle.com/admin: Object of type Undefined is not JSON serializable
+2025-01-02 02:19:51,627 - INFO - 127.0.0.1 - - [02/Jan/2025 02:19:51] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-01-02 10:02:16,253 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 10:02:16,254 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 10:02:16,263 - INFO -  * Restarting with stat
+2025-01-02 10:02:17,884 - WARNING -  * Debugger is active!
+2025-01-02 10:02:17,894 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 10:02:38,443 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:38] "GET / HTTP/1.1" 200 -
+2025-01-02 10:02:38,725 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:02:38,847 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:38] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:02:39,188 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 10:02:41,531 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-02 10:02:41,571 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:41] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:02:41,831 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:02:43,254 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:43] "GET / HTTP/1.1" 200 -
+2025-01-02 10:02:43,335 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:02:43,509 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:43] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:02:46,224 - INFO - Request from 127.0.0.1 - URL: https://www.github.com
+2025-01-02 10:02:46,226 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:46] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:02:46,527 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:02:47,690 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:47] "GET / HTTP/1.1" 200 -
+2025-01-02 10:02:47,782 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:02:47,946 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:47] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:02:49,711 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 10:02:49,713 - ERROR - Error processing URL http://suspicious-domain.com/admin/password: 'ModelTrainer' object has no attribute 'model'
+2025-01-02 10:02:49,713 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:49] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-01-02 10:02:57,454 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: predict
+2025-01-02 10:02:57,455 - INFO - 127.0.0.1 - - [02/Jan/2025 10:02:57] "[31m[1mPOST /predict HTTP/1.1[0m" 429 -
+2025-01-02 10:05:03,680 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 10:05:03,680 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 10:05:03,682 - INFO -  * Restarting with stat
+2025-01-02 10:05:05,406 - WARNING -  * Debugger is active!
+2025-01-02 10:05:05,410 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 10:05:06,069 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:06] "GET / HTTP/1.1" 200 -
+2025-01-02 10:05:06,232 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:05:06,256 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:06] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:05:06,303 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 10:05:06,361 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 10:05:08,458 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-02 10:05:08,464 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:08] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:05:08,505 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:05:09,761 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:09] "GET / HTTP/1.1" 200 -
+2025-01-02 10:05:09,779 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:05:09,799 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:09] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:05:11,890 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 10:05:13,038 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:13] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:05:13,047 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:05:15,828 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:15] "GET / HTTP/1.1" 200 -
+2025-01-02 10:05:15,842 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:05:15,842 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:15] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:05:19,021 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-02 10:05:19,036 - ERROR - Error processing URL http://test.com/download.exe: Object of type Undefined is not JSON serializable
+2025-01-02 10:05:19,036 - INFO - 127.0.0.1 - - [02/Jan/2025 10:05:19] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-01-02 10:07:51,603 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 10:07:51,603 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 10:07:51,605 - INFO -  * Restarting with stat
+2025-01-02 10:07:53,237 - WARNING -  * Debugger is active!
+2025-01-02 10:07:53,241 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 10:08:24,151 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:24] "GET / HTTP/1.1" 200 -
+2025-01-02 10:08:24,289 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:08:24,406 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:24] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:08:26,830 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 10:08:26,831 - ERROR - Error processing URL https://www.google.com: name 'known_safe_domains' is not defined
+2025-01-02 10:08:26,894 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:26] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:08:27,132 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:08:37,091 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:37] "GET / HTTP/1.1" 200 -
+2025-01-02 10:08:37,148 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:08:37,337 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:37] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:08:39,156 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 10:08:39,157 - ERROR - Error processing URL http://suspicious-domain.com/admin/password: name 'known_safe_domains' is not defined
+2025-01-02 10:08:39,158 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:39] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:08:39,471 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:08:41,808 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:41] "GET / HTTP/1.1" 200 -
+2025-01-02 10:08:41,881 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:08:42,068 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:42] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:08:44,739 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-02 10:08:44,739 - ERROR - Error processing URL http://test.com/download.exe: name 'known_safe_domains' is not defined
+2025-01-02 10:08:44,740 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:44] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:08:45,049 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:08:46,251 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 10:08:46,251 - INFO - 127.0.0.1 - - [02/Jan/2025 10:08:46] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 10:09:49,639 - INFO -  * Detected change in 'C:\\Users\\T\\Desktop\\Detection of malicious URLs\\src\\web\\app.py', reloading
+2025-01-02 10:09:49,834 - INFO -  * Restarting with stat
+2025-01-02 10:09:51,761 - WARNING -  * Debugger is active!
+2025-01-02 10:09:51,765 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 10:10:00,844 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 10:10:00,845 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 10:10:00,846 - INFO -  * Restarting with stat
+2025-01-02 10:10:02,621 - WARNING -  * Debugger is active!
+2025-01-02 10:10:02,630 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 10:10:02,980 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:02] "GET / HTTP/1.1" 200 -
+2025-01-02 10:10:03,139 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:10:03,181 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:03] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:10:06,208 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 10:10:06,219 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:06] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:10:06,229 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:10:08,512 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:08] "GET / HTTP/1.1" 200 -
+2025-01-02 10:10:08,831 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:10:08,833 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:08] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:10:11,464 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-02 10:10:11,467 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:11] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:10:11,483 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:10:13,120 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:13] "GET / HTTP/1.1" 200 -
+2025-01-02 10:10:13,434 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:10:13,440 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:13] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:10:17,482 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 10:10:17,485 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:17] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:10:17,509 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:10:18,796 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 10:10:18,797 - INFO - 127.0.0.1 - - [02/Jan/2025 10:10:18] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 10:11:22,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-02 10:11:22,610 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-02 10:11:22,611 - INFO -  * Restarting with stat
+2025-01-02 10:11:24,515 - WARNING -  * Debugger is active!
+2025-01-02 10:11:24,522 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 10:11:24,674 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:24] "GET / HTTP/1.1" 200 -
+2025-01-02 10:11:24,973 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:11:25,059 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:25] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:11:37,643 - INFO - Request from 127.0.0.1 - URL: https://docs.python.org/3/
+2025-01-02 10:11:37,654 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:37] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:11:37,674 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:11:39,504 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:39] "GET / HTTP/1.1" 200 -
+2025-01-02 10:11:39,818 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:11:39,820 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:39] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:11:51,819 - INFO - Request from 127.0.0.1 - URL: http://g00gle.com/password-reset
+2025-01-02 10:11:51,821 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:51] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:11:52,132 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:11:54,702 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:54] "GET / HTTP/1.1" 200 -
+2025-01-02 10:11:54,778 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:11:54,963 - INFO - 127.0.0.1 - - [02/Jan/2025 10:11:54] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 10:12:06,085 - INFO - Request from 127.0.0.1 - URL: http://paypa1.com/login
+2025-01-02 10:12:06,086 - INFO - 127.0.0.1 - - [02/Jan/2025 10:12:06] "POST /predict HTTP/1.1" 200 -
+2025-01-02 10:12:06,391 - INFO - 127.0.0.1 - - [02/Jan/2025 10:12:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 10:12:09,097 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 10:12:09,098 - INFO - 127.0.0.1 - - [02/Jan/2025 10:12:09] "[31m[1mGET / HTTP/1.1[0m" 429 -

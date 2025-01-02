@@ -7,6 +7,7 @@ import sys
 import os
 import numpy as np
 from urllib.parse import urlparse  # Dodajemo ovaj import
+import joblib  # Dodajemo import za joblib
 
 # Add project root to Python path
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -17,6 +18,12 @@ from src.models.model_trainer import ModelTrainer
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key-here'
+
+# Dodajemo whitelist sigurnih domena
+known_safe_domains = {
+    'google.com', 'microsoft.com', 'github.com', 'wikipedia.org',
+    'python.org', 'apple.com', 'amazon.com', 'facebook.com'
+}
 
 # Postavke za logging
 logging.basicConfig(
@@ -36,20 +43,28 @@ limiter = Limiter(
 # Initialize model trainer and feature extractor
 trainer = ModelTrainer()
 extractor = FeatureExtractor()
+model_loaded = False
 
 def load_model():
     """Function to load model only once"""
-    try:
-        model_path = os.path.join(project_root, 'models', 'best_model_random_forest.joblib')
-        print(f"Loading model from: {model_path}")
-        trainer.load_model(model_path)
-        print("Model loaded successfully!")
-    except Exception as e:
-        print(f"Error loading model: {str(e)}")
-        print("Please ensure you have trained the model first by running: python src/train.py")
-        sys.exit(1)
+    global model_loaded
+    if not model_loaded:
+        try:
+            model_path = os.path.join(project_root, 'models', 'best_model_random_forest.joblib')
+            print(f"Loading model from: {model_path}")
+            trainer.model = joblib.load(model_path)  # Promijenjen način učitavanja
+            model_loaded = True
+            print("Model loaded successfully!")
+        except Exception as e:
+            print(f"Error loading model: {str(e)}")
+            sys.exit(1)
 
-if not app.debug or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+# Load model only on main thread
+if os.environ.get("WERKZEUG_RUN_MAIN") != "true":
+    print("\nWeb aplikacija je pokrenuta!")
+    print("Otvorite jedan od ovih linkova u browseru:")
+    print("* http://localhost:5000")
+    print("* http://127.0.0.1:5000")
     load_model()
 
 @app.route('/', methods=['GET'])
@@ -68,83 +83,82 @@ def predict():
         
         print(f"Processing URL: {url}")
         
-        # Whitelist za poznate sigurne domene
-        known_safe_domains = {
-            'google.com', 'microsoft.com', 'github.com', 'wikipedia.org',
-            'python.org', 'apple.com', 'amazon.com', 'facebook.com'
-        }
+        # Extract features first to avoid potential errors
+        features = extractor.extract_features(url)
+        feature_list = list(features.values())
         
+        # Prvo provjerimo je li URL na whitelisti
         parsed_url = urlparse(url)
         domain = parsed_url.netloc.lower()
-        base_domain = '.'.join(domain.split('.')[-2:])  # uzima zadnja dva dijela domene
+        base_domain = '.'.join(domain.split('.')[-2:])
         
-        if (base_domain in known_safe_domains):
+        if base_domain in known_safe_domains:
             return render_template('result.html', result={
                 'url': url,
                 'is_malicious': False,
                 'confidence': 0.95,
-                'features': {},
+                'features': features,  # Dodano
                 'warning': 'Known safe domain'
             })
         
-        # Extract features
-        features = extractor.extract_features(url)
-        feature_list = list(features.values())
-        
-        # Dodajemo strože provjere
-        immediate_flags = (
+        # Provjera očitih malicioznih znakova
+        immediate_flags = any([
             features.get('is_shortened_url', False),
             features.get('has_typosquatting', False),
             features.get('has_number_letter_substitution', False),
-            len(url) > 100,  # Vrlo dugi URL-ovi
-            features.get('suspicious_word_count', 0) > 2
-        )
+            len(url) > 100,
+            features.get('suspicious_word_count', 0) > 2,
+            features.get('suspicious_domain', False),
+            features.get('path_has_suspicious_word', False),
+            features.get('has_suspicious_chars', False),
+            sum(1 for word in ['admin', 'password', 'login'] if word in url.lower()) > 0
+        ])
         
-        if any(immediate_flags):
+        if immediate_flags:
             return render_template('result.html', result={
                 'url': url,
                 'is_malicious': True,
                 'confidence': 0.95,
+                'features': features,  # Dodano
                 'warning': 'Suspicious patterns detected'
             })
         
-        # Dodajemo dodatnu provjeru za očite znakove malicioznosti
-        obvious_malicious = (
-            features.get('suspicious_domain', False) or
-            features.get('path_has_suspicious_word', False) or
-            features.get('has_suspicious_chars', False) or
-            sum(1 for word in ['admin', 'password', 'login'] if word in url.lower()) > 0
-        )
-        
-        # Make prediction
-        if trainer.model is None:
-            raise ValueError("Model not loaded")
+        # Model prediction ako nije očito maliciozan
+        try:
+            if not hasattr(trainer, 'model') or trainer.model is None:
+                load_model()
             
-        prediction = trainer.model.predict([feature_list])[0]
-        probability = trainer.model.predict_proba([feature_list])[0]
-        
-        # Ako imamo očite znakove malicioznosti, overrideamo predikciju
-        if obvious_malicious:
-            prediction = 1
-            probability = np.array([0.1, 0.9])  # Povećavamo sigurnost za maliciozne
-        
-        result = {
-            'url': url,
-            'is_malicious': bool(prediction),
-            'confidence': float(max(probability)),
-            'features': features,
-            'obvious_signs': obvious_malicious
-        }
-        
-        return render_template('result.html', result=result)
-        
+            prediction = trainer.model.predict([feature_list])[0]
+            probability = trainer.model.predict_proba([feature_list])[0]
+            
+            return render_template('result.html', result={
+                'url': url,
+                'is_malicious': bool(prediction),
+                'confidence': float(max(probability)),
+                'features': features,
+                'warning': None
+            })
+            
+        except Exception as e:
+            logging.error(f"Model prediction error: {str(e)}")
+            # Fallback na heuristički pristup ako model ne radi
+            is_suspicious = any([
+                features.get('suspicious_domain', False),
+                features.get('has_suspicious_chars', False),
+                features.get('suspicious_word_count', 0) > 1
+            ])
+            
+            return render_template('result.html', result={
+                'url': url,
+                'is_malicious': is_suspicious,
+                'confidence': 0.7,
+                'features': features,
+                'warning': 'Using heuristic detection (model unavailable)'
+            })
+            
     except Exception as e:
         logging.error(f"Error processing URL {url}: {str(e)}")
-        return jsonify({'error': str(e)}), 400
+        return render_template('error.html', error_message=str(e))
 
 if __name__ == '__main__':
-    print("\nWeb aplikacija je pokrenuta!")
-    print("Otvorite jedan od ovih linkova u browseru:")
-    print("* http://localhost:5000")
-    print("* http://127.0.0.1:5000")
     app.run(debug=True)
