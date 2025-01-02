@@ -250,3 +250,34 @@
 2025-01-02 10:12:06,391 - INFO - 127.0.0.1 - - [02/Jan/2025 10:12:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-01-02 10:12:09,097 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
 2025-01-02 10:12:09,098 - INFO - 127.0.0.1 - - [02/Jan/2025 10:12:09] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 17:34:04,171 - INFO -  * Restarting with stat
+2025-01-02 17:34:06,072 - WARNING -  * Debugger is active!
+2025-01-02 17:34:06,075 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 17:34:06,240 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 17:34:07,651 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:07] "GET / HTTP/1.1" 200 -
+2025-01-02 17:34:07,962 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:07] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 17:34:07,992 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 17:34:08,609 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 17:34:10,696 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 17:34:10,861 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:10] "POST /predict HTTP/1.1" 200 -
+2025-01-02 17:34:10,871 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 17:34:12,241 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:12] "GET / HTTP/1.1" 200 -
+2025-01-02 17:34:12,255 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 17:34:12,256 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:12] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 17:34:12,262 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 17:34:12,263 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:12] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 17:34:14,731 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 17:34:14,733 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:14] "POST /predict HTTP/1.1" 200 -
+2025-01-02 17:34:14,752 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 17:34:14,753 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:14] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 17:34:17,877 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:17] "GET / HTTP/1.1" 200 -
+2025-01-02 17:34:17,894 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 17:34:17,894 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 17:34:17,895 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:17] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 17:34:17,895 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:17] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 17:34:20,654 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-02 17:34:20,656 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:20] "POST /predict HTTP/1.1" 200 -
+2025-01-02 17:34:20,671 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 17:34:20,671 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:20] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 17:34:24,093 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 17:34:24,093 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:24] "[31m[1mGET / HTTP/1.1[0m" 429 -
