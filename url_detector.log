@@ -281,3 +281,343 @@
 2025-01-02 17:34:20,671 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:20] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
 2025-01-02 17:34:24,093 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
 2025-01-02 17:34:24,093 - INFO - 127.0.0.1 - - [02/Jan/2025 17:34:24] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 18:31:02,011 - INFO -  * Restarting with stat
+2025-01-02 18:31:03,982 - WARNING -  * Debugger is active!
+2025-01-02 18:31:03,987 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 18:31:04,151 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 18:31:04,537 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:04] "GET / HTTP/1.1" 200 -
+2025-01-02 18:31:04,714 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 18:31:04,793 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:04] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-02 18:31:04,852 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 18:31:07,761 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-02 18:31:07,771 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:07] "POST /predict HTTP/1.1" 200 -
+2025-01-02 18:31:08,064 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 18:31:15,619 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:15] "GET / HTTP/1.1" 200 -
+2025-01-02 18:31:15,693 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 18:31:15,693 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:15] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 18:31:15,879 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 18:31:15,879 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:15] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 18:31:17,371 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 18:31:17,372 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:17] "POST /predict HTTP/1.1" 200 -
+2025-01-02 18:31:17,689 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 18:31:17,690 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:17] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 18:31:21,600 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:21] "GET / HTTP/1.1" 200 -
+2025-01-02 18:31:21,688 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 18:31:21,688 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:21] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 18:31:21,844 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 18:31:21,845 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:21] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 18:31:32,821 - INFO - Request from 127.0.0.1 - URL: https://www.github.com
+2025-01-02 18:31:32,822 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:32] "POST /predict HTTP/1.1" 200 -
+2025-01-02 18:31:33,131 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 18:31:33,132 - INFO - 127.0.0.1 - - [02/Jan/2025 18:31:33] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 22:51:03,909 - INFO -  * Restarting with stat
+2025-01-02 22:51:06,054 - WARNING -  * Debugger is active!
+2025-01-02 22:51:06,063 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 22:51:06,241 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 22:51:07,082 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:07] "GET / HTTP/1.1" 200 -
+2025-01-02 22:51:07,226 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 22:51:07,309 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:07] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 22:51:07,634 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-02 22:51:10,155 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-02 22:51:10,165 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:10] "POST /predict HTTP/1.1" 200 -
+2025-01-02 22:51:10,462 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 22:51:20,840 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:20] "GET / HTTP/1.1" 200 -
+2025-01-02 22:51:20,931 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 22:51:20,931 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:20] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 22:51:21,101 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 22:51:21,102 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:21] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 22:51:24,498 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-02 22:51:24,499 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:24] "POST /predict HTTP/1.1" 200 -
+2025-01-02 22:51:24,814 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 22:51:24,814 - INFO - 127.0.0.1 - - [02/Jan/2025 22:51:24] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:02:02,768 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:02] "GET / HTTP/1.1" 200 -
+2025-01-02 23:02:02,830 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 23:02:03,031 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:03] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:02:05,289 - INFO - Request from 127.0.0.1 - URL: https://www.github.com
+2025-01-02 23:02:05,290 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:05] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:02:05,609 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:02:07,434 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:07] "GET / HTTP/1.1" 200 -
+2025-01-02 23:02:07,505 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:02:07,505 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:07] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:02:07,680 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:02:07,681 - INFO - 127.0.0.1 - - [02/Jan/2025 23:02:07] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:05:46,533 - INFO -  * Restarting with stat
+2025-01-02 23:05:48,605 - WARNING -  * Debugger is active!
+2025-01-02 23:05:48,609 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 23:05:48,801 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 23:05:48,927 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:48] "GET / HTTP/1.1" 200 -
+2025-01-02 23:05:49,310 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 23:05:49,391 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:49] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:05:51,711 - INFO - Request from 127.0.0.1 - URL: http://suspicious-domain.com/admin/password
+2025-01-02 23:05:51,726 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:51] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:05:52,027 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:05:53,289 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:53] "GET / HTTP/1.1" 200 -
+2025-01-02 23:05:53,380 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:05:53,380 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:53] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:05:53,549 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:05:53,549 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:53] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:05:55,570 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-02 23:05:55,581 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:55] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:05:55,885 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:05:55,886 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:55] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:05:57,336 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:57] "GET / HTTP/1.1" 200 -
+2025-01-02 23:05:57,399 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:05:57,400 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:57] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:05:57,600 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:05:57,600 - INFO - 127.0.0.1 - - [02/Jan/2025 23:05:57] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:06:10,185 - INFO - 127.0.0.1 - - [02/Jan/2025 23:06:10] "GET /history HTTP/1.1" 200 -
+2025-01-02 23:06:10,362 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:06:10,364 - INFO - 127.0.0.1 - - [02/Jan/2025 23:06:10] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:06:15,262 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 23:06:15,263 - INFO - 127.0.0.1 - - [02/Jan/2025 23:06:15] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 23:09:28,003 - INFO -  * Restarting with stat
+2025-01-02 23:09:30,205 - WARNING -  * Debugger is active!
+2025-01-02 23:09:30,209 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 23:09:30,576 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 23:09:30,721 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:30] "GET / HTTP/1.1" 200 -
+2025-01-02 23:09:30,981 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 23:09:31,029 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:31] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:09:33,794 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-02 23:09:33,810 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:33] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:09:34,102 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:09:35,816 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:35] "GET / HTTP/1.1" 200 -
+2025-01-02 23:09:35,889 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:09:35,889 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:35] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:09:36,077 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:09:36,078 - INFO - 127.0.0.1 - - [02/Jan/2025 23:09:36] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:16:09,452 - INFO -  * Restarting with stat
+2025-01-02 23:16:11,617 - WARNING -  * Debugger is active!
+2025-01-02 23:16:11,621 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 23:16:11,800 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 23:16:12,122 - INFO - 127.0.0.1 - - [02/Jan/2025 23:16:12] "GET / HTTP/1.1" 200 -
+2025-01-02 23:16:12,239 - INFO - 127.0.0.1 - - [02/Jan/2025 23:16:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 23:16:12,261 - INFO - 127.0.0.1 - - [02/Jan/2025 23:16:12] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:16:27,257 - INFO - 127.0.0.1 - - [02/Jan/2025 23:16:27] "GET / HTTP/1.1" 200 -
+2025-01-02 23:16:27,266 - INFO - 127.0.0.1 - - [02/Jan/2025 23:16:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:16:27,486 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:16:27,487 - INFO - 127.0.0.1 - - [02/Jan/2025 23:16:27] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:21:42,085 - INFO -  * Restarting with stat
+2025-01-02 23:21:44,254 - WARNING -  * Debugger is active!
+2025-01-02 23:21:44,258 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 23:21:44,474 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 23:21:44,524 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:44] "GET / HTTP/1.1" 200 -
+2025-01-02 23:21:44,947 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:21:44,964 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:44] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:21:46,563 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:46] "GET /history HTTP/1.1" 200 -
+2025-01-02 23:21:46,870 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:21:48,399 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:48] "GET / HTTP/1.1" 200 -
+2025-01-02 23:21:48,476 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:21:48,477 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:48] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:21:48,664 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:21:48,665 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:48] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:21:49,223 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,224 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,224 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,224 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,225 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,226 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,228 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,229 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,230 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,231 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,231 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:21:49,263 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:49] "[35m[1mGET /stats HTTP/1.1[0m" 500 -
+2025-01-02 23:21:49,581 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:49] "GET /stats?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-02 23:21:49,729 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:49] "GET /stats?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-02 23:21:50,089 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:50] "GET /stats?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-02 23:21:50,094 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:50] "GET /stats?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-01-02 23:21:50,340 - INFO - 127.0.0.1 - - [02/Jan/2025 23:21:50] "GET /stats?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-02 23:23:52,782 - INFO -  * Restarting with stat
+2025-01-02 23:23:55,040 - WARNING -  * Debugger is active!
+2025-01-02 23:23:55,045 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 23:23:55,281 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 23:23:55,521 - INFO - 127.0.0.1 - - [02/Jan/2025 23:23:55] "GET / HTTP/1.1" 200 -
+2025-01-02 23:23:55,886 - INFO - 127.0.0.1 - - [02/Jan/2025 23:23:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 23:23:55,920 - INFO - 127.0.0.1 - - [02/Jan/2025 23:23:55] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:24:02,678 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-02 23:24:02,693 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:02] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:24:02,980 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:24:05,625 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:05] "GET / HTTP/1.1" 200 -
+2025-01-02 23:24:05,703 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:05,703 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:05] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:24:05,889 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:05,889 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:05] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:24:13,344 - INFO - Request from 127.0.0.1 - URL: https://www.g00gle.com
+2025-01-02 23:24:13,354 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:13] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:24:13,651 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:13,652 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:13] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:24:15,839 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:15] "GET / HTTP/1.1" 200 -
+2025-01-02 23:24:15,916 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:15,917 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:15] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:24:16,104 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:16,104 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:16] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:24:16,603 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:16] "GET /history HTTP/1.1" 200 -
+2025-01-02 23:24:16,915 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:16,916 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:16] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:24:20,286 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 23:24:20,286 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:20] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 23:24:26,990 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,990 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,991 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,991 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,992 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,992 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,993 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,994 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,995 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,996 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:26,997 - ERROR - Error parsing log line: time data ' * Running on http://127.0.0.1:5000\n' does not match format '%Y-%m-%d %H:%M:%S,%f'
+2025-01-02 23:24:27,060 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:27] "GET /stats HTTP/1.1" 200 -
+2025-01-02 23:24:27,070 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:24:27,070 - INFO - 127.0.0.1 - - [02/Jan/2025 23:24:27] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:27:13,355 - INFO -  * Restarting with stat
+2025-01-02 23:27:15,313 - WARNING -  * Debugger is active!
+2025-01-02 23:27:15,317 - INFO -  * Debugger PIN: 136-414-756
+2025-01-02 23:27:15,483 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-02 23:27:16,036 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:16] "GET / HTTP/1.1" 200 -
+2025-01-02 23:27:16,167 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-02 23:27:16,278 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:16] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-02 23:27:29,040 - INFO - Request from 127.0.0.1 - URL: https://copilot.microsoft.com/chats/DiiAfTsQYX2owgpNXxdsZ
+2025-01-02 23:27:29,086 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:29] "POST /predict HTTP/1.1" 200 -
+2025-01-02 23:27:29,100 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-02 23:27:31,050 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:31] "GET / HTTP/1.1" 200 -
+2025-01-02 23:27:31,356 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:31,358 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:31] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:27:31,372 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:31,373 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:31] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:27:32,362 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:32] "GET /history HTTP/1.1" 200 -
+2025-01-02 23:27:32,380 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:32,381 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:32] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:27:37,957 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:37] "GET / HTTP/1.1" 200 -
+2025-01-02 23:27:38,261 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:38,262 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:38] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:27:38,290 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:38,290 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:38] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-02 23:27:39,307 - ERROR - Error generating stats: name 'sqlite3' is not defined
+2025-01-02 23:27:39,337 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:39] "GET /stats HTTP/1.1" 200 -
+2025-01-02 23:27:39,381 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:39,381 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:39] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-02 23:27:44,562 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-02 23:27:44,562 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:44] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-02 23:27:49,142 - ERROR - Error generating stats: name 'sqlite3' is not defined
+2025-01-02 23:27:49,142 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:49] "GET /stats HTTP/1.1" 200 -
+2025-01-02 23:27:49,451 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-02 23:27:49,451 - INFO - 127.0.0.1 - - [02/Jan/2025 23:27:49] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:09,130 - INFO -  * Restarting with stat
+2025-01-03 01:29:11,441 - WARNING -  * Debugger is active!
+2025-01-03 01:29:11,445 - INFO -  * Debugger PIN: 136-414-756
+2025-01-03 01:29:11,628 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-03 01:29:11,736 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:11] "GET / HTTP/1.1" 200 -
+2025-01-03 01:29:12,083 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-03 01:29:12,160 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:12] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-03 01:29:14,767 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-03 01:29:14,784 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:14] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:29:15,072 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:29:16,392 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:16] "GET / HTTP/1.1" 200 -
+2025-01-03 01:29:16,468 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:16,469 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:16] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:16,638 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:16,638 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:16] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-03 01:29:17,233 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:17] "GET /history HTTP/1.1" 200 -
+2025-01-03 01:29:17,537 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:17,538 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:17] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:20,003 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:20] "GET / HTTP/1.1" 200 -
+2025-01-03 01:29:20,064 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:20,065 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:20] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:20,250 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:20,250 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:20] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-03 01:29:20,926 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:20] "GET /stats HTTP/1.1" 200 -
+2025-01-03 01:29:21,191 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:21,191 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:21] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:25,653 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-03 01:29:25,653 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:25] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-03 01:29:38,886 - INFO -  * Restarting with stat
+2025-01-03 01:29:41,014 - WARNING -  * Debugger is active!
+2025-01-03 01:29:41,018 - INFO -  * Debugger PIN: 136-414-756
+2025-01-03 01:29:41,182 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-03 01:29:41,511 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:41] "GET / HTTP/1.1" 200 -
+2025-01-03 01:29:41,667 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-03 01:29:41,753 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:41] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-03 01:29:46,791 - INFO - Request from 127.0.0.1 - URL: http://test.com/download.exe
+2025-01-03 01:29:46,806 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:46] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:29:47,098 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:29:53,692 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:53] "GET / HTTP/1.1" 200 -
+2025-01-03 01:29:53,860 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:53,874 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:53] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:53,943 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:53,943 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:53] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-03 01:29:55,636 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:55] "GET /history HTTP/1.1" 200 -
+2025-01-03 01:29:55,943 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:55,943 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:55] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:59,613 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:59] "GET / HTTP/1.1" 200 -
+2025-01-03 01:29:59,705 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:59,705 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:59] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:29:59,874 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:29:59,875 - INFO - 127.0.0.1 - - [03/Jan/2025 01:29:59] "[31m[1mGET /static/js/validation.js HTTP/1.1[0m" 429 -
+2025-01-03 01:30:00,945 - INFO - 127.0.0.1 - - [03/Jan/2025 01:30:00] "GET /stats HTTP/1.1" 200 -
+2025-01-03 01:30:01,253 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: static
+2025-01-03 01:30:01,254 - INFO - 127.0.0.1 - - [03/Jan/2025 01:30:01] "[31m[1mGET /static/css/style.css HTTP/1.1[0m" 429 -
+2025-01-03 01:30:07,780 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: home
+2025-01-03 01:30:07,780 - INFO - 127.0.0.1 - - [03/Jan/2025 01:30:07] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-01-03 01:32:42,052 - INFO -  * Restarting with stat
+2025-01-03 01:32:44,193 - WARNING -  * Debugger is active!
+2025-01-03 01:32:44,201 - INFO -  * Debugger PIN: 136-414-756
+2025-01-03 01:32:44,452 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-01-03 01:32:44,464 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:44] "GET / HTTP/1.1" 200 -
+2025-01-03 01:32:44,765 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-03 01:32:44,786 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:44] "GET /static/js/validation.js HTTP/1.1" 200 -
+2025-01-03 01:32:49,062 - INFO - Request from 127.0.0.1 - URL: https://www.google.com
+2025-01-03 01:32:49,079 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:49] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:32:49,377 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:32:50,968 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:50] "GET / HTTP/1.1" 200 -
+2025-01-03 01:32:51,076 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:32:51,219 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:51] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:32:51,845 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:51] "GET /history HTTP/1.1" 200 -
+2025-01-03 01:32:52,149 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:32:55,701 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:55] "GET / HTTP/1.1" 200 -
+2025-01-03 01:32:55,777 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:32:55,950 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:55] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:32:56,932 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:56] "GET /stats HTTP/1.1" 200 -
+2025-01-03 01:32:57,246 - INFO - 127.0.0.1 - - [03/Jan/2025 01:32:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:01,258 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:01] "GET / HTTP/1.1" 200 -
+2025-01-03 01:33:01,333 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:01,510 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:01] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:33:21,119 - INFO - Request from 127.0.0.1 - URL: https://www.glthub.com
+2025-01-03 01:33:22,315 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:22] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:33:22,325 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:29,825 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:29] "GET / HTTP/1.1" 200 -
+2025-01-03 01:33:29,946 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:30,087 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:30] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:33:47,848 - INFO - Request from 127.0.0.1 - URL: https://www.micr0s0ft.com
+2025-01-03 01:33:47,859 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:47] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:33:47,867 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:50,649 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:50] "GET / HTTP/1.1" 200 -
+2025-01-03 01:33:50,962 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:50,968 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:50] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:33:52,447 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:52] "GET /history HTTP/1.1" 200 -
+2025-01-03 01:33:52,537 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:56,658 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:56] "GET /stats HTTP/1.1" 200 -
+2025-01-03 01:33:56,679 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:59,153 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:59] "GET / HTTP/1.1" 200 -
+2025-01-03 01:33:59,458 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:33:59,481 - INFO - 127.0.0.1 - - [03/Jan/2025 01:33:59] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:34:15,144 - INFO - Request from 127.0.0.1 - URL: https://tryhackme.com/r/room/snort
+2025-01-03 01:34:15,294 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:15] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:34:15,303 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:34:20,600 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:20] "GET / HTTP/1.1" 200 -
+2025-01-03 01:34:20,788 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:34:20,866 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:20] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:34:30,136 - INFO - Request from 127.0.0.1 - URL: https://tryhackme.com
+2025-01-03 01:34:30,297 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:30] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:34:30,306 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:34:32,685 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:32] "GET / HTTP/1.1" 200 -
+2025-01-03 01:34:32,993 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:34:33,010 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:33] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:34:35,203 - INFO - Request from 127.0.0.1 - URL: https://www.microsoft.com
+2025-01-03 01:34:35,215 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:35] "POST /predict HTTP/1.1" 200 -
+2025-01-03 01:34:35,234 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:34:36,215 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:36] "GET / HTTP/1.1" 200 -
+2025-01-03 01:34:36,311 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-03 01:34:36,464 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:36] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2025-01-03 01:34:38,189 - WARNING - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: predict
+2025-01-03 01:34:38,190 - INFO - 127.0.0.1 - - [03/Jan/2025 01:34:38] "[31m[1mPOST /predict HTTP/1.1[0m" 429 -
