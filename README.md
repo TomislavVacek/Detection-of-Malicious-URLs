@@ -17,6 +17,7 @@ This project implements a real-time malicious URL detection system using machine
 - Whitelist for known safe domains
 
 ## Project Structure
+```
 Detection of malicious URLs/
 │
 ├── data/
@@ -35,6 +36,7 @@ Detection of malicious URLs/
 │
 ├── requirements.txt    # Project dependencies
 └── README.md          # Project documentation
+```
 
 ## Features
 
